@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace Task_DEV_3
 {
     /// <summary>
@@ -8,9 +9,7 @@ namespace Task_DEV_3
     {
         static void Main(string[] args)
         {
-            int decimalNumber
-;
-            int convertedToValue;
+
             if (args.Length < 2)
             {
                 Console.WriteLine("Error! Incorrect format of the input data!");
@@ -19,12 +18,12 @@ namespace Task_DEV_3
 
             try
             {
-                decimalNumber = Int32.Parse(args[0]);
-                convertedToValue = Int32.Parse(args[1]);
-                if (convertedToValue > 1 && convertedToValue < 21)
+                int decimalNumber = Int32.Parse(args[0]);
+                int systemRadix = Int32.Parse(args[1]);
+                if (systemRadix > 1 && systemRadix < 21)
                 {
-                    Convertor converter = new Convertor();
-                    Console.WriteLine("Output: {0}", converter.ConvertTo(decimalNumber, convertedToValue));
+                    NumeralSystemsConvertor converter = new NumeralSystemsConvertor();
+                    Console.WriteLine("Output: {0}", converter.ConvertTo(decimalNumber, systemRadix));
                 }
                 else
                 {
