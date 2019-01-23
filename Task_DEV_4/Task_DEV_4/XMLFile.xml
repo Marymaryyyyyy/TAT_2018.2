@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<messages>
+  <note id="501">
+    <to>Tove</to>
+    <from>Jani</from>
+    <heading>Напоминание</heading>
+    <body>Не забудь обо мне в эти выходные!</body>
+  </note>
+  <note id="502">
+    <to>Jani</to>
+    <from>Tove</from>
+    <heading>Re: Напоминание</heading>
+    <body>Не забуду</body>
+  </note>
+</messages>
